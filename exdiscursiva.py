@@ -3,5 +3,5 @@
 
 lista = [5,10,20]
 soma = sum(lista)
-assert soma == 35, "A soma está incorreta"
-assert soma != 35, "A soma está correta"
+assert soma == 35, "A soma está incorreta!..."
+assert soma != 35, "A soma está correta!....."
