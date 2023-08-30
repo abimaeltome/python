@@ -19,7 +19,7 @@ print('incício do programa')
 hello()
 print('término do programa')
 
-
+"""///////////////////////////////////////////////////////////////////////////////////////"""
 #como definir uma função com parâmetros
 
 """
@@ -41,3 +41,25 @@ def calcula_imc(peso, altura):
 print('Início do Programa')
 calcula_imc(70, 1.88)
 print("Término do Programa")
+"""/////////////////////////////////////////////////////////////////////"""
+
+#Como receber os resultados de uma função
+def calcula_imc(peso, altura):
+    print("Parâmetro peso", peso)
+    print("Parâmetro altura", altura)
+    imc = peso/altura**2
+    return imc
+
+#incício do programa
+print("início do programa")
+indice = calcula_imc(altura=1.8, peso=97)
+print("IMC ", indice)
+if indice <18.5:
+    print("Baixo peso ")
+elif indice <25:
+    print("Peso adequado")
+elif indice <30:
+    print("Sobrepeso")
+else:
+    print("obeso")
+print("Término do programa")
